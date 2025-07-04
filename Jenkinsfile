@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone source code') {
             steps{
-                git branch: 'master' url: https://github.com/bhargavisutharam/my-first-app
+                git branch: 'master', url: https://github.com/bhargavisutharam/my-first-app
             }
         }
         stage('Testing'){
